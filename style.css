@@ -1,0 +1,67 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+}
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  padding: 10px ;
+}
+nav ul {
+  display: flex;
+  gap: 40px;                      
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+header p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+}
+.email{
+    font-size: 20px;
+}
+section {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;          
+  gap: 40px;
+  padding: 40px;
+  min-height: 80vh;              
+  font-family: Arial, sans-serif;
+}
+section div p{
+font-size: 20px;
+font-weight: lighter;
+}
+section div h3{
+  font-size: 100px;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section div button{
+  padding: 10px 20px;
+  background-color: navy;
+ color: bisque;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+section div img{
+ background-color: transparent;
+  padding: 10px;
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
