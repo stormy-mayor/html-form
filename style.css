@@ -6,10 +6,6 @@
   font-family: 'h1Font';
   src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
 }
-@font-face {
-  font-family: 'h4Font';
-  src: url('./assets/fonts/outfit/static/Outfit-Bold.ttf') format('truetype');
-}
 body{
     background: hsl(30, 18%, 87%);
     font-family: 'Times New Roman', Times, serif;
@@ -29,26 +25,24 @@ img{
 }
 h1{
   font-family: 'h1Font', sans-serif;
-  font-size: 40px;
 }
 h4{
-  font-family: 'h4Font', sans-serif;
+  font-family: 'h1Font', sans-serif;
   color: hsl(332, 51%, 32%);
 }
 h3{
-  font-family: 'Young', sans-serif;
+  font-family: 'h1Font', sans-serif;
   color: hsl(14, 45%, 36%);
-  font-size: 19.2px;
 }
 .row1 {
   width: 100%;
   background-color:  hsl(330, 100%, 98%);
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 2px;
   position: relative;
 }
 .row1 h4{
-  font-family: 'h4Font', sans-serif;
+  font-family: 'h1Font', sans-serif;
   margin-bottom: 10px;
   padding-left: 20px;
 }
@@ -73,7 +67,7 @@ h3{
   width: 6px;
   height: 6px;
   background-color:  hsl(332, 51%, 32%);
-  border-radius: 50%;
+  border-radius: 5px;
 }
 .row1 li strong{
   font-weight: bold;
@@ -92,6 +86,9 @@ padding: 0px;
   padding-left: 20px;
   color: hsl(24, 5%, 18%);
   margin-bottom: 13px;
+}
+ul li::marker{
+color: hsl(14, 45%, 36%);
 }
 .book1 li ::before{
  content: "";
@@ -123,7 +120,10 @@ padding: 0px;
   color: hsl(30, 10%, 34%);
   line-height: 1.6;
 }
-.instructions ol li ::marker{
+ol li::marker{
+  color: hsl(14, 45%, 36%);
+}
+.instructions ol li::marker{
   position: absolute;
   left: -15px;
   color:  hsl(14, 45%, 36%);
@@ -132,18 +132,14 @@ padding: 0px;
   font-weight: bold;
   color: hsl(24, 5%, 18%);
 }
-tr{
-  display: flex;
-  justify-content: space-between;
-}
-td {
-  width: 50%;
+.wrapper{
+  width: 300px;
   text-align: left;
 }
-
-th {
-  width: 50%;
-  text-align: left;
+.calories,.carbs,.protein,.fat{
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 .attribution {
       font-size: 11px;
